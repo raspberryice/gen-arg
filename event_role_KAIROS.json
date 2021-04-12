@@ -1,0 +1,2446 @@
+{
+  "ArtifactExistence.DamageDestroyDisableDismantle.Damage": {
+    "event_id": "LDC_KAIROS_evt_001",
+    "template": "<arg1> damaged <arg2> using <arg3> instrument in <arg4> place",
+    "i-label": 1,
+    "keywords": [
+      "damage",
+      "harm"
+    ],
+    "roles": [
+      "Damager",
+      "Artifact",
+      "Instrument",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "bal",
+        "com",
+        "fac",
+        "loc",
+        "mon",
+        "nat",
+        "pth",
+        "veh",
+        "wea"
+      ],
+      [
+        "com",
+        "veh",
+        "wea"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "ArtifactExistence.DamageDestroyDisableDismantle.Destroy": {
+    "event_id": "LDC_KAIROS_evt_002",
+    "template": "<arg1> destroyed <arg2> using <arg3> instrument in <arg4> place",
+    "i-label": 2,
+    "keywords": [
+      "destroy",
+      "destruct",
+      "sabotage"
+    ],
+    "roles": [
+      "Destroyer",
+      "Artifact",
+      "Instrument",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "bal",
+        "com",
+        "fac",
+        "loc",
+        "mon",
+        "nat",
+        "pth",
+        "veh",
+        "wea"
+      ],
+      [
+        "com",
+        "veh",
+        "wea"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "ArtifactExistence.DamageDestroyDisableDismantle.DisableDefuse": {
+    "event_id": "LDC_KAIROS_evt_003",
+    "template": "<arg1> disabled or defused <arg2> using <arg3> instrument in <arg4> place",
+    "i-label": 3,
+    "keywords": [
+      "disable",
+      "defuse",
+      "deactivate"
+    ],
+    "roles": [
+      "Disabler",
+      "Artifact",
+      "Instrument",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "abs",
+        "com",
+        "fac",
+        "veh",
+        "wea"
+      ],
+      [
+        "abs",
+        "com",
+        "veh",
+        "wea"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "ArtifactExistence.DamageDestroyDisableDismantle.Dismantle": {
+    "event_id": "LDC_KAIROS_evt_004",
+    "template": "<arg1> dismantled <arg2> using <arg3> instrument in <arg4> place",
+    "i-label": 4,
+    "keywords": [
+      "dismantle",
+      "disassemble",
+      "deconstruct"
+    ],
+    "roles": [
+      "Dismantler",
+      "Artifact",
+      "Instrument",
+      "Components",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "com",
+        "fac",
+        "veh",
+        "wea"
+      ],
+      [
+        "com",
+        "veh"
+      ],
+      [
+        "com"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "ArtifactExistence.DamageDestroyDisableDismantle.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_005",
+    "template": "<arg1> damaged or destroyed <arg2> using <arg3> instrument in <arg4> place",
+    "i-label": 5,
+    "keywords": [
+      "demolish",
+      "ruin",
+      "devastate",
+      "disrupt",
+      "wreck"
+    ],
+    "roles": [
+      "DamagerDestroyer",
+      "Artifact",
+      "Instrument",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "bal",
+        "com",
+        "fac",
+        "loc",
+        "mon",
+        "nat",
+        "pth",
+        "veh",
+        "wea"
+      ],
+      [
+        "com",
+        "veh",
+        "wea"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "ArtifactExistence.ManufactureAssemble.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_006",
+    "template": "<arg1> manufactured or assembled or produced <arg2> from <arg3> components using <arg4> at <arg5> place",
+    "i-label": 6,
+    "keywords": [
+      "build",
+      "assemble",
+      "manufacture"
+    ],
+    "roles": [
+      "ManufacturerAssembler",
+      "Artifact",
+      "Components",
+      "Instrument",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "bal",
+        "com",
+        "fac",
+        "mon",
+        "veh",
+        "wea",
+        "pth"
+      ],
+      [
+        "com",
+        "veh",
+        "wea",
+        "pth"
+      ],
+      [
+        "com",
+        "inf"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Cognitive.IdentifyCategorize.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_007",
+    "template": "<arg1> identified <arg2> as <arg3> at <arg4> place",
+    "i-label": 7,
+    "keywords": [
+      "identify",
+      "recognize",
+      "discover"
+    ],
+    "roles": [
+      "Identifier",
+      "IdentifiedObject",
+      "IdentifiedRole",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "event",
+        "per",
+        "org",
+        "bal",
+        "com",
+        "fac",
+        "loc",
+        "mon",
+        "veh",
+        "wea",
+        "aml",
+        "bod",
+        "nat",
+        "pla",
+        "pth"
+      ],
+      [
+        "event",
+        "per",
+        "org",
+        "bal",
+        "com",
+        "fac",
+        "loc",
+        "mon",
+        "veh",
+        "wea",
+        "aml",
+        "bod",
+        "nat",
+        "pla",
+        "pth"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Cognitive.Inspection.SensoryObserve": {
+    "event_id": "LDC_KAIROS_evt_008",
+    "template": "<arg1> observed <arg2> using <arg3> in <arg4> place",
+    "i-label": 8,
+    "keywords": [
+      "observe",
+      "inspect",
+      "examine"
+    ],
+    "roles": [
+      "Observer",
+      "ObservedEntity",
+      "Instrument",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "com",
+        "veh",
+        "wea",
+        "fac",
+        "bal",
+        "mon",
+        "mhi",
+        "aml",
+        "bod",
+        "nat",
+        "pla",
+        "pth",
+        "event"
+      ],
+      [
+        "com"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Cognitive.Research.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_009",
+    "template": "<arg1> researched <arg2> subject using <arg3> at <arg4> place",
+    "i-label": 9,
+    "keywords": [
+      "research",
+      "analyze",
+      "probe"
+    ],
+    "roles": [
+      "Researcher",
+      "Subject",
+      "Means",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "event",
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "loc",
+        "fac",
+        "veh",
+        "wea",
+        "com",
+        "bal",
+        "mon",
+        "law",
+        "res",
+        "val",
+        "mhi",
+        "inf",
+        "abs",
+        "aml",
+        "bod",
+        "nat",
+        "pla",
+        "pth"
+      ],
+      [
+        "event",
+        "abs",
+        "inf",
+        "com"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Cognitive.TeachingTrainingLearning.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_010",
+    "template": "<arg1> taught <arg2> field of knowledge to <arg3> using <arg4> at <arg5> institution in <arg6> place",
+    "i-label": 10,
+    "keywords": [
+      "learn",
+      "teach",
+      "train",
+      "school",
+      "lessons",
+      "classes"
+    ],
+    "roles": [
+      "TeacherTrainer",
+      "FieldOfKnowledge",
+      "Learner",
+      "Means",
+      "Institution",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "aml"
+      ],
+      [
+        "inf"
+      ],
+      [
+        "per",
+        "org",
+        "com",
+        "aml",
+        "abs"
+      ],
+      [
+        "com",
+        "abs",
+        "inf"
+      ],
+      [
+        "org"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Conflict.Attack.DetonateExplode": {
+    "event_id": "LDC_KAIROS_evt_011",
+    "template": "<arg1> detonated or exploded <arg4> explosive device using <arg3> to attack <arg2> target at <arg5> place",
+    "i-label": 11,
+    "keywords": [
+      "detonate",
+      "explode",
+      "bombing",
+      "detonation"
+    ],
+    "roles": [
+      "Attacker",
+      "Target",
+      "Instrument",
+      "ExplosiveDevice",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac",
+        "per",
+        "com",
+        "veh",
+        "wea",
+        "sid",
+        "aml",
+        "pla",
+        "nat"
+      ],
+      [
+        "wea",
+        "com"
+      ],
+      [
+        "wea",
+        "com"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Conflict.Attack.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_012",
+    "template": "<arg1> attacked <arg2> using <arg3> at <arg4> place",
+    "i-label": 12,
+    "keywords": [
+      "attack",
+      "war",
+      "terrorism",
+      "shot",
+      "fire"
+    ],
+    "roles": [
+      "Attacker",
+      "Target",
+      "Instrument",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "aml"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac",
+        "per",
+        "com",
+        "veh",
+        "wea",
+        "sid",
+        "aml",
+        "pla",
+        "nat"
+      ],
+      [
+        "com",
+        "veh",
+        "wea",
+        "pth"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Conflict.Defeat.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_013",
+    "template": "<arg1> defeated <arg2> in <arg3> conflict at <arg4> place",
+    "i-label": 13,
+    "keywords": [
+      "defeat",
+      "defeated",
+      "crush",
+      "victory",
+      "win",
+      "triumph"
+    ],
+    "roles": [
+      "Victor",
+      "Defeated",
+      "ConflictOrElection",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "aml"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "aml"
+      ],
+      [
+        "event"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Conflict.Demonstrate.DemonstrateWithViolence": {
+    "event_id": "LDC_KAIROS_evt_014",
+    "template": "<arg1> was in a demonstration involving violence for <arg4> topic with <arg3> visual display against <arg5> at <arg6> place, with potential involvement of <arg2> police or military",
+    "i-label": 14,
+    "keywords": [
+      "demonstrate",
+      "protest",
+      "strike"
+    ],
+    "roles": [
+      "Demonstrator",
+      "Regulator",
+      "VisualDisplay",
+      "Topic",
+      "Target",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "sid"
+      ],
+      [
+        "per",
+        "org"
+      ],
+      [
+        "com"
+      ],
+      [
+        "event",
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "loc",
+        "fac",
+        "veh",
+        "wea",
+        "com",
+        "bal",
+        "mon",
+        "law",
+        "res",
+        "val",
+        "mhi",
+        "inf",
+        "abs",
+        "aml",
+        "bod",
+        "nat",
+        "pla",
+        "pth"
+      ],
+      [
+        "org",
+        "per",
+        "gpe"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Conflict.Demonstrate.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_015",
+    "template": "<arg1> was in a demonstration for <arg4> topic with <arg3> visual display against <arg5> at <arg6> place, with potential involvement of <arg2> police or military",
+    "i-label": 15,
+    "keywords": [
+      "demonstrate",
+      "march",
+      "rally"
+    ],
+    "roles": [
+      "Demonstrator",
+      "Regulator",
+      "VisualDisplay",
+      "Topic",
+      "Target",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "sid"
+      ],
+      [
+        "per",
+        "org"
+      ],
+      [
+        "com"
+      ],
+      [
+        "event",
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "loc",
+        "fac",
+        "veh",
+        "wea",
+        "com",
+        "bal",
+        "mon",
+        "law",
+        "res",
+        "val",
+        "mhi",
+        "inf",
+        "abs",
+        "aml",
+        "bod",
+        "nat",
+        "pla",
+        "pth"
+      ],
+      [
+        "org",
+        "per",
+        "gpe"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Contact.Contact.Broadcast": {
+    "event_id": "LDC_KAIROS_evt_016",
+    "template": "<arg1> communicated to <arg2> about <arg4> topic using <arg3> at <arg5> place (one-way communication)",
+    "i-label": 16,
+    "keywords": [
+      "broadcast",
+      "announce",
+      "state"
+    ],
+    "roles": [
+      "Communicator",
+      "Recipient",
+      "Instrument",
+      "Topic",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "abs",
+        "com"
+      ],
+      [
+        "event",
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "loc",
+        "fac",
+        "veh",
+        "wea",
+        "com",
+        "bal",
+        "mon",
+        "law",
+        "res",
+        "val",
+        "mhi",
+        "inf",
+        "abs",
+        "aml",
+        "bod",
+        "nat",
+        "pla",
+        "pth"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Contact.Contact.Correspondence": {
+    "event_id": "LDC_KAIROS_evt_017",
+    "template": "<arg1> communicated remotely with <arg2> about <arg4> topic using <arg3> at <arg5> place",
+    "i-label": 17,
+    "keywords": [
+      "telephone",
+      "mail",
+      "letter",
+      "correspondence",
+      "call"
+    ],
+    "roles": [
+      "Participant",
+      "Participant",
+      "Instrument",
+      "Topic",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "abs",
+        "com"
+      ],
+      [
+        "event",
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "loc",
+        "fac",
+        "veh",
+        "wea",
+        "com",
+        "bal",
+        "mon",
+        "law",
+        "res",
+        "val",
+        "mhi",
+        "inf",
+        "abs",
+        "aml",
+        "bod",
+        "nat",
+        "pla",
+        "pth"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Contact.Contact.Meet": {
+    "event_id": "LDC_KAIROS_evt_018",
+    "template": "<arg1> met face-to-face with <arg2> about <arg3> topic at <arg4> place",
+    "i-label": 18,
+    "keywords": [
+      "meet",
+      "meeting",
+      "encounter",
+      "summit"
+    ],
+    "roles": [
+      "Participant",
+      "Participant",
+      "Topic",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "event",
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "loc",
+        "fac",
+        "veh",
+        "wea",
+        "com",
+        "bal",
+        "mon",
+        "law",
+        "res",
+        "val",
+        "mhi",
+        "inf",
+        "abs",
+        "aml",
+        "bod",
+        "nat",
+        "pla",
+        "pth"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Contact.Contact.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_019",
+    "template": "<arg1> communicated with <arg2> about <arg3> topic at <arg4> place (document does not specify in person or not, or one-way or not)",
+    "i-label": 19,
+    "keywords": [
+      "contact",
+      "discuss",
+      "talk"
+    ],
+    "roles": [
+      "Participant",
+      "Participant",
+      "Topic",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "event",
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "loc",
+        "fac",
+        "veh",
+        "wea",
+        "com",
+        "bal",
+        "mon",
+        "law",
+        "res",
+        "val",
+        "mhi",
+        "inf",
+        "abs",
+        "aml",
+        "bod",
+        "nat",
+        "pla",
+        "pth"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Contact.Prevarication.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_023",
+    "template": "<arg1> communicated with <arg2> about <arg3> topic at <arg4> place (document does not specify in person or not, or one-way or not)",
+    "i-label": 20,
+    "keywords": [
+      "dodge",
+      "lie",
+      "prevaricate"
+    ],
+    "roles": [
+      "Communicator",
+      "Recipient",
+      "Topic",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "event",
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "loc",
+        "fac",
+        "veh",
+        "wea",
+        "com",
+        "bal",
+        "mon",
+        "law",
+        "res",
+        "val",
+        "mhi",
+        "inf",
+        "abs",
+        "aml",
+        "bod",
+        "nat",
+        "pla",
+        "pth"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Contact.RequestCommand.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_027",
+    "template": "<arg1> communicated with <arg2> about <arg3> topic at <arg4> place (document does not specify in person or not, or one-way or not)",
+    "i-label": 21,
+    "keywords": [
+      "request",
+      "command",
+      "order"
+    ],
+    "roles": [
+      "Communicator",
+      "Recipient",
+      "Topic",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "event",
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "loc",
+        "fac",
+        "veh",
+        "wea",
+        "com",
+        "bal",
+        "mon",
+        "law",
+        "res",
+        "val",
+        "mhi",
+        "inf",
+        "abs",
+        "aml",
+        "bod",
+        "nat",
+        "pla",
+        "pth"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Contact.ThreatenCoerce.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_031",
+    "template": "<arg1> communicated with <arg2> about <arg3> topic at <arg4> place (document does not specify in person or not, or one-way or not)",
+    "i-label": 22,
+    "keywords": [
+      "threaten",
+      "pressurize",
+      "provoke"
+    ],
+    "roles": [
+      "Communicator",
+      "Recipient",
+      "Topic",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "event",
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "loc",
+        "fac",
+        "veh",
+        "wea",
+        "com",
+        "bal",
+        "mon",
+        "law",
+        "res",
+        "val",
+        "mhi",
+        "inf",
+        "abs",
+        "aml",
+        "bod",
+        "nat",
+        "pla",
+        "pth"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Control.ImpedeInterfereWith.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_032",
+    "template": "<arg1> impeded or interfered with <arg2> event at <arg3> place",
+    "i-label": 23,
+    "keywords": [
+      "impede",
+      "hinder",
+      "interfer",
+      "disrupt"
+    ],
+    "roles": [
+      "Impeder",
+      "ImpededEvent",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "event"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Disaster.Crash.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_033",
+    "template": "<arg1> person in <arg2> vehicle crashed into <arg3> at <arg4> place",
+    "i-label": 24,
+    "keywords": [
+      "crash",
+      "collision",
+      "derailment",
+      "collide",
+      "accident"
+    ],
+    "roles": [
+      "DriverPassenger",
+      "Vehicle",
+      "CrashObject",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per"
+      ],
+      [
+        "veh"
+      ],
+      [
+        "aml",
+        "com",
+        "fac",
+        "loc",
+        "per",
+        "veh",
+        "wea"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Disaster.DiseaseOutbreak.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_034",
+    "template": "<arg1> disease broke out among <arg2> victims or population at <arg3> place",
+    "i-label": 25,
+    "keywords": [
+      "epidemic",
+      "outbreak",
+      "transmission"
+    ],
+    "roles": [
+      "Disease",
+      "Victim",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "mhi"
+      ],
+      [
+        "per",
+        "org",
+        "sid",
+        "aml",
+        "pla"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac",
+        "veh"
+      ]
+    ]
+  },
+  "Disaster.FireExplosion.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_035",
+    "template": "<arg1> caught fire or exploded from <arg2> instrument at <arg3> place",
+    "i-label": 26,
+    "keywords": [
+      "fire",
+      "explode",
+      "blast",
+      "arson",
+      "burn"
+    ],
+    "roles": [
+      "FireExplosionObject",
+      "Instrument",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "bal",
+        "veh",
+        "wea",
+        "fac",
+        "loc",
+        "com",
+        "nat"
+      ],
+      [
+        "com",
+        "veh",
+        "wea",
+        "fac"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "GenericCrime.GenericCrime.GenericCrime": {
+    "event_id": "LDC_KAIROS_evt_036",
+    "template": "<arg1> committed a crime against <arg2> at <arg3> place",
+    "i-label": 27,
+    "keywords": [
+      "crime",
+      "felony",
+      "offense",
+      "theft",
+      "murder",
+      "robbery"
+    ],
+    "roles": [
+      "Perpetrator",
+      "Victim",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "aml"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Justice.Acquit.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_037",
+    "template": "<arg1> court or judge acquitted <arg2> of <arg3> crime in <arg4> place",
+    "i-label": 28,
+    "keywords": [
+      "acquit",
+      "absolve"
+    ],
+    "roles": [
+      "JudgeCourt",
+      "Defendant",
+      "Crime",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "side"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "event"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Justice.ArrestJailDetain.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_038",
+    "template": "<arg1> arrested or jailed <arg2> for <arg3> crime at <arg4> place",
+    "i-label": 29,
+    "keywords": [
+      "arrest",
+      "jail",
+      "imprison"
+    ],
+    "roles": [
+      "Jailer",
+      "Detainee",
+      "Crime",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "side"
+      ],
+      [
+        "per"
+      ],
+      [
+        "event"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Justice.ChargeIndict.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_039",
+    "template": "<arg1> charged or indicted <arg2> before <arg3> court or judge for <arg4> crime in <arg5> place",
+    "i-label": 30,
+    "keywords": [
+      "charge",
+      "indict",
+      "accuse",
+      "accusation"
+    ],
+    "roles": [
+      "Prosecutor",
+      "Defendant",
+      "JudgeCourt",
+      "Crime",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "event"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Justice.Convict.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_040",
+    "template": "<arg1> court or judge convicted <arg2> of <arg3> crime in <arg4> place",
+    "i-label": 31,
+    "keywords": [
+      "convict"
+    ],
+    "roles": [
+      "JudgeCourt",
+      "Defendant",
+      "Crime",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "event"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Justice.InvestigateCrime.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_041",
+    "template": "<arg1> investigated <arg2> for <arg3> crime in <arg4> place",
+    "i-label": 32,
+    "keywords": [
+      "investigate",
+      "investigation",
+      "search",
+      "suspect",
+      "inquiry"
+    ],
+    "roles": [
+      "Investigator",
+      "Defendant",
+      "Crime",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "event"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Justice.ReleaseParole.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_042",
+    "template": "<arg1> court or judge released or paroled <arg2> from <arg3> crime in <arg4> place",
+    "i-label": 33,
+    "keywords": [
+      "release",
+      "parole",
+      "free"
+    ],
+    "roles": [
+      "JudgeCourt",
+      "Defendant",
+      "Crime",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "event"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Justice.Sentence.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_043",
+    "template": "<arg1> court or judge sentenced <arg2> for <arg3> crime to <arg4> sentence in <arg5> place",
+    "i-label": 34,
+    "keywords": [
+      "sentence"
+    ],
+    "roles": [
+      "JudgeCourt",
+      "Defendant",
+      "Crime",
+      "Sentence",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "event"
+      ],
+      [
+        "sen"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Justice.TrialHearing.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_044",
+    "template": "<arg1> tried <arg2> before <arg3> court or judge for <arg4> crime in <arg5> place",
+    "i-label": 35,
+    "keywords": [
+      "trial",
+      "tried",
+      "hearing",
+      "testify"
+    ],
+    "roles": [
+      "Prosecutor",
+      "Defendant",
+      "JudgeCourt",
+      "Crime",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "event"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Life.Consume.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_045",
+    "template": "<arg1> consumed <arg2> at <arg3> place",
+    "i-label": 36,
+    "keywords": [
+      "consume",
+      "eat",
+      "drink",
+      "ingest"
+    ],
+    "roles": [
+      "ConsumingEntity",
+      "ConsumedThing",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "aml"
+      ],
+      [
+        "com"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Life.Die.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_046",
+    "template": "<arg1> died at <arg2> place from <arg4> medical issue, killed by <arg3> killer",
+    "i-label": 37,
+    "keywords": [
+      "die",
+      "kill",
+      "death",
+      "assasinate",
+      "suicide"
+    ],
+    "roles": [
+      "Victim",
+      "Place",
+      "Killer",
+      "MedicalIssue"
+    ],
+    "role_types": [
+      [
+        "per",
+        "aml"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "aml"
+      ],
+      [
+        "mhi"
+      ]
+    ]
+  },
+  "Life.Illness.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_047",
+    "template": "<arg1> has <arg3> sickness or illness at <arg4> place, deliberately infected by <arg2>",
+    "i-label": 38,
+    "keywords": [
+      "illness",
+      "disease",
+      "sickness"
+    ],
+    "roles": [
+      "Victim",
+      "DeliberateInjurer",
+      "Disease",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "aml"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "mhi"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Life.Infect.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_048",
+    "template": "<arg1> was infected with <arg2> from <arg3> at <arg4> place",
+    "i-label": 39,
+    "keywords": [
+      "infect",
+      "spread",
+      "contaminate"
+    ],
+    "roles": [
+      "Victim",
+      "InfectingAgent",
+      "Source",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "aml"
+      ],
+      [
+        "pth"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "loc",
+        "fac",
+        "veh",
+        "wea",
+        "com",
+        "bal",
+        "mon",
+        "mhi",
+        "aml",
+        "bod",
+        "nat",
+        "pla",
+        "pth"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Life.Injure.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_049",
+    "template": "<arg1> was injured by <arg2> using <arg3> in <arg4> body part with <arg5> medical issue at <arg6> place",
+    "i-label": 40,
+    "keywords": [
+      "injure",
+      "hurt",
+      "wound"
+    ],
+    "roles": [
+      "Victim",
+      "Injurer",
+      "Instrument",
+      "BodyPart",
+      "MedicalCondition",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "aml"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid",
+        "aml"
+      ],
+      [
+        "bal",
+        "com",
+        "veh",
+        "wea",
+        "fac",
+        "mon"
+      ],
+      [
+        "bod"
+      ],
+      [
+        "mhi"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Medical.Diagnosis.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_050",
+    "template": "<arg1> treater diagnosed <arg2> patient with <arg3> symptom for <arg4> medical issue at <arg5> place",
+    "i-label": 41,
+    "keywords": [
+      "diagnosis",
+      "identification"
+    ],
+    "roles": [
+      "Treater",
+      "Patient",
+      "SymptomSign",
+      "MedicalCondition",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "aml"
+      ],
+      [
+        "mhi"
+      ],
+      [
+        "mhi"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Medical.Intervention.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_051",
+    "template": "<arg1> treater treated <arg2> patient for <arg3> medical issue with <arg4> means at <arg5> place",
+    "i-label": 42,
+    "keywords": [
+      "treat",
+      "surgery",
+      "hospitalize",
+      "medicate",
+      "medicine",
+      "rehabilitation"
+    ],
+    "roles": [
+      "Treater",
+      "Patient",
+      "MedicalIssue",
+      "Instrument",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "aml"
+      ],
+      [
+        "mhi"
+      ],
+      [
+        "com"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Medical.Vaccinate.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_052",
+    "template": "<arg1> treater vaccinated <arg2> patient via <arg4> vaccination method for <arg3> medical issue at <arg5> place",
+    "i-label": 43,
+    "keywords": [
+      "vaccinate"
+    ],
+    "roles": [
+      "Treater",
+      "Patient",
+      "VaccineTarget",
+      "VaccineMethod",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "aml"
+      ],
+      [
+        "mhi"
+      ],
+      [
+        "com"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Movement.Transportation.Evacuation": {
+    "event_id": "LDC_KAIROS_evt_053",
+    "template": "<arg1> transported <arg2> in <arg3> from <arg4> place to <arg5> place",
+    "i-label": 44,
+    "keywords": [
+      "evacuate",
+      "evacuation",
+      "retreat",
+      "escape"
+    ],
+    "roles": [
+      "Transporter",
+      "PassengerArtifact",
+      "Vehicle",
+      "Origin",
+      "Destination"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "aml"
+      ],
+      [
+        "veh"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Movement.Transportation.IllegalTransportation": {
+    "event_id": "LDC_KAIROS_evt_055",
+    "template": "<arg1> illegally transported <arg2> in <arg3> from <arg4> place to <arg5> place",
+    "i-label": 45,
+    "keywords": [
+      "smuggle",
+      "trespass",
+      "intrude"
+    ],
+    "roles": [
+      "Transporter",
+      "PassengerArtifact",
+      "Vehicle",
+      "Origin",
+      "Destination"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "bal",
+        "com",
+        "fac",
+        "loc",
+        "mon",
+        "veh",
+        "wea",
+        "aml",
+        "pth",
+        "pla",
+        "bod",
+        "nat"
+      ],
+      [
+        "veh"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Movement.Transportation.PreventPassage": {
+    "event_id": "LDC_KAIROS_evt_056",
+    "template": "<arg4> prevents <arg1> from entering <arg6> place from <arg5> place to transport <arg2> using <arg3> vehicle",
+    "i-label": 46,
+    "keywords": [
+      "block",
+      "stop",
+      "obstruct"
+    ],
+    "roles": [
+      "Transporter",
+      "PassengerArtifact",
+      "Vehicle",
+      "Preventer",
+      "Origin",
+      "Destination"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "sid",
+        "gpe"
+      ],
+      [
+        "per",
+        "bal",
+        "com",
+        "fac",
+        "loc",
+        "mon",
+        "veh",
+        "wea",
+        "aml",
+        "pth",
+        "pla",
+        "bod",
+        "nat"
+      ],
+      [
+        "veh"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Movement.Transportation.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_057",
+    "template": "<arg1> transported <arg2> in <arg3> from <arg4> place to <arg5> place",
+    "i-label": 47,
+    "keywords": [
+      "transport",
+      "move",
+      "travel",
+      "head"
+    ],
+    "roles": [
+      "Transporter",
+      "PassengerArtifact",
+      "Vehicle",
+      "Origin",
+      "Destination"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "bal",
+        "com",
+        "fac",
+        "loc",
+        "mon",
+        "veh",
+        "wea",
+        "aml",
+        "pth",
+        "pla",
+        "bod",
+        "nat"
+      ],
+      [
+        "veh"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Personnel.EndPosition.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_063",
+    "template": "<arg1> stopped working in <arg3> position at <arg2> organization in <arg4> place",
+    "i-label": 48,
+    "keywords": [
+      "resign",
+      "retire",
+      "former",
+      "fire",
+      "dismiss"
+    ],
+    "roles": [
+      "Employee",
+      "PlaceOfEmployment",
+      "Position",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per"
+      ],
+      [
+        "gpe",
+        "org"
+      ],
+      [
+        "ttl"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Personnel.StartPosition.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_064",
+    "template": "<arg1> started working in <arg3> position at <arg2> organization in <arg4> place",
+    "i-label": 49,
+    "keywords": [
+      "hire",
+      "employ",
+      "appoint"
+    ],
+    "roles": [
+      "Employee",
+      "PlaceOfEmployment",
+      "Position",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per"
+      ],
+      [
+        "gpe",
+        "org"
+      ],
+      [
+        "ttl"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Transaction.Donation.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_066",
+    "template": "<arg1> gave <arg4> to <arg2> for the benefit of <arg3> at <arg5> place",
+    "i-label": 50,
+    "keywords": [
+      "donate",
+      "aid",
+      "donation",
+      "charity",
+      "relief"
+    ],
+    "roles": [
+      "Giver",
+      "Recipient",
+      "Beneficiary",
+      "ArtifactMoney",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "mon",
+        "com",
+        "bal",
+        "fac",
+        "veh",
+        "wea",
+        "aml",
+        "pla",
+        "nat",
+        "abs",
+        "bod"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  },
+  "Transaction.ExchangeBuySell.Unspecified": {
+    "event_id": "LDC_KAIROS_evt_067",
+    "template": "<arg1> bought, sold, or traded <arg3> to <arg2> in exchange for <arg4> for the benefit of <arg5> at <arg6> place",
+    "i-label": 51,
+    "keywords": [
+      "buy",
+      "sell",
+      "purchase",
+      "rent",
+      "trade"
+    ],
+    "roles": [
+      "Giver",
+      "Recipient",
+      "AcquiredEntity",
+      "PaymentBarter",
+      "Beneficiary",
+      "Place"
+    ],
+    "role_types": [
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "bal",
+        "com",
+        "gpe",
+        "fac",
+        "loc",
+        "mon",
+        "org",
+        "veh",
+        "wea",
+        "abs",
+        "aml",
+        "nat",
+        "pla",
+        "pth"
+      ],
+      [
+        "bal",
+        "com",
+        "gpe",
+        "fac",
+        "loc",
+        "mon",
+        "org",
+        "veh",
+        "wea",
+        "abs",
+        "aml",
+        "nat",
+        "pla",
+        "pth"
+      ],
+      [
+        "per",
+        "org",
+        "gpe",
+        "sid"
+      ],
+      [
+        "loc",
+        "gpe",
+        "fac"
+      ]
+    ]
+  }
+}

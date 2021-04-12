@@ -1,0 +1,356 @@
+{
+  "Movement:Transport": {
+    "event_id": "evt001",
+    "template":"<arg1> transported <arg2> in <arg3> vehicle from <arg4> place to <arg5> place",
+    "roles":[ "Agent",
+    "Artifact",
+    "Vehicle",
+    "Origin",
+    "Destination"],
+    "i-label": 1,
+    "keywords": ["transport","move","travel", "head"]
+    },
+  "Personnel:Elect": {
+    "event_id": "evt002",
+    "template": "<arg1> elected <arg2> in <arg3> place",
+    "roles":[ "Entity", "Person", "Place"],
+    "i-label":2,
+    "keywords":["elect", "vote", "election"]
+},
+  "Personnel:Start-Position": {
+    "event_id": "evt003",
+    "template": "<arg1> started working at <arg2> organization in <arg3> place",
+    "roles":["Person", "Entity", "Place"],
+    "i-label": 3,
+    "keywords":["hire","employ", "appoint"]
+  },
+  "Personnel:Nominate": {
+    "event_id": "evt004",
+    "template": "<arg1> nominated <arg2>",
+    "roles":["Agent", "Person"],
+    "i-label":4,
+    "keywords":["nominate", "name"]
+  },
+  "Personnel:End-Position": {
+    "event_id": "evt005",
+    "template": "<arg1> stopped working at <arg2> organization in <arg3> place",
+    "roles":[
+      "Person",
+      "Entity",
+      "Place"
+    ],
+    "i-label": 5,
+    "keywords":["resign", "retire", "former", "fire","dismiss"]
+  },
+  "Conflict:Attack": {
+    "event_id": "evt006",
+    "template":"<arg1> attacked <arg2> hurting <arg5> victims using <arg3> instrument at <arg4> place",
+    "roles":[
+      "Attacker",
+      "Target",
+      "Instrument",
+      "Place",
+      "Victim"
+    ],
+    "i-label": 6,
+    "keywords":["attack","invade", "shoot", "explode", "war", "terrorism"]
+  },
+  "Contact:Meet": {
+    "event_id":"evt007",
+    "template": "<arg1> met with <arg2> in <arg3> place",
+    "roles":[
+      "Entity",
+      "Entity",
+      "Place"
+    ],
+    "i-label":7,
+    "keywords": ["meet", "meeting", "talk", "summit"]
+  },
+  "Life:Marry": {
+    "event_id": "evt008",
+    "template": "<arg1> married <arg2> in <arg3> place",
+    "roles":[
+      "Person",
+      "Person",
+      "Place"
+    ],
+    "i-label": 8,
+    "keywords": ["marry", "wed", "spouse"]
+  },
+  "Transaction:Transfer-Money": {
+    "event_id": "evt009",
+    "template": "<arg1> gave money to <arg2> for the benefit of <arg3> in <arg4> place",
+    "roles":[
+      "Giver",
+      "Recipient",
+      "Beneficiary",
+      "Place"
+    ],
+    "i-label": 9,
+    "keywords": ["pay", "transfer", "donate", "lend", "borrow", "compensate"]
+  },
+  "Conflict:Demonstrate": {
+    "event_id": "evt010",
+    "template": "<arg1> demonstrated at <arg2> place",
+    "roles":[
+      "Entity",
+      "Place"
+    ],
+    "i-label": 10,
+    "keywords":["demonstrate", "protest","rally", "riot"]
+  },
+  "Business:End-Org": {
+    "event_id": "evt011",
+    "template": "<arg1> organization shut down at <arg2> place",
+    "roles":[
+      "Org",
+      "Place"
+    ],
+    "i-label": 11,
+    "keywords": ["shut", "fold", "collapse", "demise", "failure"]
+  },
+  "Justice:Sue": {
+    "event_id": "evt012",
+    "template": "<arg1> sued <arg2> before <arg3> court or judge in <arg4> place",
+    "roles":[
+      "Plaintiff",
+      "Defendant",
+      "Adjudicator",
+      "Place"
+    ],
+    "i-label": 12,
+    "keywords": ["sue", "lawsuit"]
+  },
+  "Life:Injure": {
+    "event_id": "evt013",
+    "template": "<arg1> injured <arg2> with <arg3> instrument in <arg4> place",
+    "roles":["Agent",
+      "Victim",
+      "Instrument",
+      "Place"
+    ],
+    "i-label": 13,
+    "keywords": ["injure", "hurt", "wound"]
+  },
+  "Life:Die": {
+    "event_id": "evt014",
+    "template": "<arg1> killed <arg2> with <arg3> instrument in <arg4> place",
+    "roles":[
+      "Agent",
+      "Victim",
+      "Instrument",
+      "Place"
+    ],
+    "i-label": 14,
+    "keywords": ["die", "kill", "death", "assasinate", "suicide"]
+  },
+  "Justice:Arrest-Jail": {
+    "event_id": "evt015",
+    "template": "<arg1> arrested <arg2> in <arg3> place",
+    "roles":[
+      "Agent",
+      "Person",
+      "Place"
+    ],
+    "i-label": 15,
+    "keywords":["arrest", "jail", "imprison"]
+  },
+  "Contact:Phone-Write": {
+    "event_id": "evt016",
+    "template": "<arg1> communicated remotely with <arg2> at <arg3> place",
+    "roles":[
+      "Entity",
+      "Entity",
+      "Place"
+    ],
+    "i-label": 16,
+    "keywords": ["call", "mail", "letter", "telephone", "correspondence"]
+  },
+  "Transaction:Transfer-Ownership": {
+    "event_id": "evt017",
+    "template":"<arg1> gave <arg4> to <arg2> for the benefit of <arg3> at <arg5> place",
+    "roles":[
+      "Seller",  
+      "Buyer",
+      "Beneficiary",
+      "Artifact",
+      "Place"],
+    "i-label": 17,
+    "keywords": ["purchase", "buy", "acquire"]
+  },
+  "Business:Start-Org": {
+    "event_id": "evt018",
+    "template": "<arg1> started <arg2> organization at <arg3> place",
+    "roles":[
+      "Agent",
+      "Org",
+      "Place"
+    ],
+    "i-label": 18,
+    "keywords":["establish", "launch", "initiate"]
+  },
+  "Justice:Execute": {
+    "event_id": "evt019",
+    "template": "<arg1> executed <arg2> at <arg3> place",
+    "roles":[
+      "Agent",
+      "Person",
+      "Place"
+    ],
+    "i-label": 19,
+    "keywords":["execute", "execution"]
+  },
+  "Justice:Trial-Hearing": {
+    "event_id": "evt020",
+    "template":"<arg1> tried <arg2> before <arg3> court or judge in <arg4> place",
+    "roles": [
+      "Prosecutor",
+      "Defendant",
+      "Adjudicator",
+      "Place"
+    ],
+    "i-label": 20,
+    "keywords": ["trial", "tried", "hearing", "testify"]
+  },
+  "Life:Be-Born": {
+    "event_id": "evt021",
+    "template": "<arg1> was born in <arg2> place",
+    "roles":[
+      "Person",
+      "Place"
+    ],
+    "i-label": 21,
+    "keywords": ["born","birth"]
+  },
+  "Justice:Charge-Indict": {
+    "event_id": "evt022",
+    "template": "<arg1> charged or indicted <arg2> before <arg3> court or judge in <arg4> place",
+    "roles":[
+      "Prosecutor",
+      "Defendant",
+      "Adjudicator",
+      "Place"
+    ],
+    "i-label": 22,
+    "keywords": ["charge", "indict", "accuse","accusation"]
+  },
+  "Justice:Convict": {
+    "event_id": "evt023",
+    "template": "<arg1> court or judge convicted <arg2> in <arg3> place",
+    "roles":[
+      "Adjudicator",
+      "Defendant",
+      "Place"
+    ],
+    "i-label": 23,
+    "keywords":["convict"]
+  },
+  "Justice:Sentence": {
+    "event_id": "evt024",
+    "template": "<arg1> court or judge sentenced <arg2> in <arg3> place",
+    "roles":[
+      "Adjudicator",
+      "Defendant",
+      "Place"
+    ],
+    "i-label": 24,
+    "keywords":["sentence"]
+  },
+  "Business:Declare-Bankruptcy": {
+    "event_id": "evt025",
+    "template": "<arg1> declared bankruptcy at <arg2> place",
+    "roles":[
+      "Org",
+      "Place"
+    ],
+    "i-label": 25,
+    "keywords": ["bankrupt","bankruptcy","broke"]
+  },
+  "Justice:Release-Parole": {
+    "event_id": "evt026",
+    "template": "<arg1> released or paroled <arg2> in <arg3> place",
+    "roles":[
+      "Entity",
+      "Person",
+      "Place"
+    ],
+    "i-label": 26,
+    "keywords":["release", "parole", "free"]
+  },
+  "Justice:Fine": {
+    "event_id": "evt027",
+    "template": "<arg1> court or judge fined <arg2> at <arg3> place",
+    "roles": [
+      "Adjudicator",
+      "Entity",
+      "Place"
+    ],
+    "i-label": 27,
+    "keywords":["fine", "forfeit", "penalize", "fee", "penalty"]
+  },
+  "Justice:Pardon": {
+    "event_id": "evt028",
+    "template": "<arg1> court or judge pardoned <arg2> at <arg3> place",
+    "roles":[
+      "Adjudicator",
+      "Defendant",
+      "Place"
+    ],
+    "i-label": 28,
+    "keywords": ["pardon","forgiveness","forgive","mercy", "amnesty"]
+  },
+  "Justice:Appeal": {
+    "event_id": "evt029",
+    "template": "<arg1> appealed to <arg2> court or judge at <arg3> place",
+    "roles":[
+      "Plaintiff",
+      "Adjudicator",
+      "Place"
+    ],
+    "i-label": 29,
+    "keywords": ["appeal", "retrial"]
+  },
+  "Justice:Extradite": {
+    "event_id": "evt030",
+    "template": "<arg1> extradited <arg2> from <arg3> place to <arg4> place",
+    "roles":[
+      "Agent",
+      "Person",
+      "Origin",
+      "Destination"
+    ],
+    "i-label": 30,
+    "keywords": ["extradite", "deport", "expel", "extradiction"]
+  },
+  "Life:Divorce": {
+    "event_id": "evt031",
+    "template":"<arg1> divorced <arg2> in <arg3> place",
+    "roles":[
+      "Person",
+      "Person",
+      "Place"
+    ],
+    "i-label": 31,
+    "keywords": ["divorce", "split", "dissolution"]
+  },
+  "Business:Merge-Org": {
+    "event_id": "evt032",
+    "template": "<arg1> organization merged with <arg2> organization",
+    "roles":[
+      "Org",
+      "Org"
+    ],
+    "i-label": 32,
+    "keywords": ["merge", "acquire", "merger"]
+  },
+  "Justice:Acquit": {
+    "event_id": "evt033",
+    "template": "<arg1> court or judge acquitted <arg2>",
+    "roles":[
+      "Adjudicator",
+      "Defendant"
+    ],
+    "i-label": 33,
+    "keywords":["acquit", "absolve"]
+  }
+}
