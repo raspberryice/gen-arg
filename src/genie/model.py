@@ -10,6 +10,7 @@ from transformers import BartTokenizer, BartConfig
 from transformers import AdamW, get_linear_schedule_with_warmup
 
 from .network import BartGen
+from .constrained_gen import BartConstrainedGen
 
 logger = logging.getLogger(__name__)
 
@@ -26,6 +27,9 @@ class GenIEModel(pl.LightningModule):
         
         if self.hparams.model=='gen':
             self.model = BartGen(self.config, self.tokenizer)
+            self.model.resize_token_embeddings() 
+        elif self.hparams.model == 'constrained-gen':
+            self.model = BartConstrainedGen(self.config, self.tokenizer)
             self.model.resize_token_embeddings() 
         else:
             raise NotImplementedError

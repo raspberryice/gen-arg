@@ -9,8 +9,10 @@ import torch
 import wandb 
 from pytorch_lightning import Trainer
 from pytorch_lightning.callbacks import LearningRateMonitor, EarlyStopping, ModelCheckpoint
-from pytorch_lightning.loggers import WandbLogger
+from pytorch_lightning.loggers import WandbLogger, TensorBoardLogger
 from pytorch_lightning.utilities.seed import seed_everything
+
+
 
 from src.genie.data_module import RAMSDataModule
 from src.genie.ACE_data_module import ACEDataModule
@@ -29,7 +31,7 @@ def main():
         "--model", 
         type=str, 
         required=True,
-        choices=['gen']
+        choices=['gen','constrained-gen']
     )
     parser.add_argument(
         "--dataset",
@@ -70,7 +72,7 @@ def main():
     )
     parser.add_argument('--input_dir', type=str, default=None)
     parser.add_argument('--coref_dir', type=str, default='data/kairos/coref_outputs')
-    parser.add_argument('--use_info', action='store_true', default=True, help='use informative mentions instead of the nearest mention.')
+    parser.add_argument('--use_info', action='store_true', default=False, help='use informative mentions instead of the nearest mention.')
     parser.add_argument('--mark_trigger', action='store_true')
     parser.add_argument('--sample-gen', action='store_true', help='Do sampling when generation.')
     parser.add_argument("--train_batch_size", default=8, type=int, help="Batch size per GPU/CPU for training.")
@@ -148,7 +150,7 @@ def main():
 
 
     lr_logger = LearningRateMonitor() 
-    
+    tb_logger = TensorBoardLogger('logs/')
 
     model = GenIEModel(args)
     if args.dataset == 'RAMS':
@@ -166,6 +168,7 @@ def main():
     
 
     trainer = Trainer(
+        logger=tb_logger,
         min_epochs=args.num_train_epochs,
         max_epochs=args.num_train_epochs, 
         gpus=args.gpus, 
@@ -182,7 +185,6 @@ def main():
     if args.load_ckpt:
         model.load_state_dict(torch.load(args.load_ckpt,map_location=model.device)['state_dict']) 
 
-    dm= None 
     if args.eval_only: 
         dm.setup('test')
         trainer.test(model, datamodule=dm) #also loads training dataloader 
