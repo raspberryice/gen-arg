@@ -678,4 +678,34 @@ class BartConstrainedGen(PreTrainedModel):
 
         return input_ids
     
+    # Function from `generation_utils.py` of Transformers library
+    def postprocess_next_token_scores(
+        self,
+        scores,
+        input_ids,
+        no_repeat_ngram_size,
+        bad_words_ids,
+        cur_len,
+        min_length,
+        max_length,
+        eos_token_id,
+        repetition_penalty,
+        batch_size,
+        num_beams,
+    ):
+        # repetition penalty (from CTRL paper https://arxiv.org/abs/1909.05858)
+        if repetition_penalty != 1.0:
+            self.enforce_repetition_penalty_(
+                scores,
+                batch_size,
+                num_beams,
+                input_ids,
+                repetition_penalty,
+            )
+
+        # set eos token prob to zero if min_length is not reached
+        if eos_token_id is not None and cur_len < min_length:
+            scores[:, eos_token_id] = -float("inf")
+
+        return scores
     
