@@ -28,4 +28,6 @@ Alternatively, you can download individual files by
 - `wget https://gen-arg-data.s3.us-east-2.amazonaws.com/wikievents/data/<split>.jsonl` for split={train, dev,test}.
 - `wget https://gen-arg-data.s3.us-east-2.amazonaws.com/wikievents/data/coref/<split>.jsonlines` for split={train, dev, test}.
   
-
+Additional processed test files for RAMS can be downloaded by
+- `wget https://gen-arg-data.s3.us-east-2.amazonaws.com/RAMS/test_head_coref.jsonlines`
+- `wget https://gen-arg-data.s3.us-east-2.amazonaws.com/RAMS/test_head.jsonlines`
