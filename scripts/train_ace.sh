@@ -2,10 +2,12 @@
 set -e 
 set -x 
 DATA_DIR=data/ace/pro_mttrig_id/json
-CKPT_NAME=gen-ACE 
+MODEL=constrained-gen
+CKPT_NAME=constrained-gen-ACE 
+
 
 rm -rf checkpoints/${CKPT_NAME}
-python train.py --model=gen --ckpt_name=${CKPT_NAME} \
+python train.py --model=${MODEL} --ckpt_name=${CKPT_NAME} \
     --dataset=ACE \
     --tmp_dir=preprocessed_ACE \
     --train_file=${DATA_DIR}/train.oneie.json \
