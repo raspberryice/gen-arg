@@ -257,7 +257,7 @@ if __name__ == '__main__':
     
     all_keywords = set() 
     for e in ontology_dict:
-        keywords = set(ontology_dict[e]['keywords'])
+        keywords = set(ontology_dict[e]['keywords'][:args.keyword_n])
         keywords = expand_keywords_inflection(keywords)
         all_keywords.update(keywords)
     
