@@ -16,8 +16,7 @@ The ACE dataset is provided by LDC and unfortunately we cannot release it direct
 
 ## Code 
 
-- v0.1 (April 12, 2021): Basic generation model for argument extraction. (This does not include the post-processing script.)
+- v1 (April 12, 2021): Basic generation model for argument extraction. (This does not include the post-processing script.)
+- v2: The event trigger detection model is under the branch `tapkey`. 
 
 
-
-This page is currently under construction.

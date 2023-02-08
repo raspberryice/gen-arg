@@ -1,0 +1,122 @@
+{
+    "0":{
+      "Type":"ABS",
+      "Output Value for Type":"abs",
+      "Definition":"Abstract, non-tangible artifacts such as software (e.g., programs, tool kits, apps, e-mail), measureable intellectual property, contracts, etc. (nb: does not include laws, which are LAW type)"
+    },
+    "1":{
+      "Type":"AML",
+      "Output Value for Type":"aml",
+      "Definition":"Animal, a non-human living organism which feeds on organic matter, typically having specialized sense organs and a nervous system and able to respond rapidly to stimuli"
+    },
+    "2":{
+      "Type":"BAL",
+      "Output Value for Type":"bal",
+      "Definition":"A ballot for an election, either the paper ballot used for voting, including both physical paper ballots and also the slate of candidates and ballot questions"
+    },
+    "3":{
+      "Type":"BOD",
+      "Output Value for Type":"bod",
+      "Definition":"An identifiable, living part of a human's or animal's body, such as a eye, ear, neck, leg, etc."
+    },
+    "4":{
+      "Type":"COM",
+      "Output Value for Type":"com",
+      "Definition":"A tangible product or article of trade for which someone pays or barters, or more generally, an artifact or a thing"
+    },
+    "5":{
+      "Type":"FAC",
+      "Output Value for Type":"fac",
+      "Definition":"A functional, primarily man-made structure. Facilities are artifacts falling under the domains of architecture and civil engineering, including more temporary human constructs, such as police lines and checkpoints."
+    },
+    "6":{
+      "Type":"GPE",
+      "Output Value for Type":"gpe",
+      "Definition":"Geopolitical entities such as countries, provinces, states, cities, towns, etc. GPEs are composite entities, consisting of a physical location, a government, and a population. All three of these elements must be present for an entity to be tagged as a GPE. A GPE entity may be a single geopolitical entity or a group."
+    },
+    "7":{
+      "Type":"INF",
+      "Output Value for Type":"inf",
+      "Definition":"An information object such as a field of study or topic of communication, including thoughts, opinions, etc."
+    },
+    "8":{
+      "Type":"LAW",
+      "Output Value for Type":"law",
+      "Definition":"A law, an act that is voted on by either a legislative body or an electorate, such as a law, referendum, act, regulation, statute, ordinance, etc."
+    },
+    "9":{
+      "Type":"LOC",
+      "Output Value for Type":"loc",
+      "Definition":"Geographical entities such as geographical areas and landmasses, bodies of water"
+    },
+    "10":{
+      "Type":"MHI",
+      "Output Value for Type":"mhi",
+      "Definition":"Any medical condition or health issue, to include everything from disease to broken bones to fever to general ill health, medical errors, even natural causes"
+    },
+    "11":{
+      "Type":"MON",
+      "Output Value for Type":"mon",
+      "Definition":"A monetary payment. The extent of a Money mention includes modifying quantifiers, the amount, and the currency unit, all of which can be optional."
+    },
+    "12":{
+      "Type":"NAT",
+      "Output Value for Type":"nat",
+      "Definition":"Valuable materials or substances, such as minerals, forests, water, and fertile land, that are not man-made, occur naturally within the environment and can be used for economic gain"
+    },
+    "13":{
+      "Type":"ORG",
+      "Output Value for Type":"org",
+      "Definition":"Corporations, agencies, and other groups of people defined by an established organizational structure. An ORG entity may be a single organization or a group. A key feature of an ORG is that it can change members without changing identity."
+    },
+    "14":{
+      "Type":"PER",
+      "Output Value for Type":"per",
+      "Definition":"Person entities are limited to humans. A PER entity may be a single person or a group."
+    },
+    "15":{
+      "Type":"PLA",
+      "Output Value for Type":"pla",
+      "Definition":"Plants\/flora as well as edible fungi such as mushrooms; multicellular living organisms, typically growing in the earth and  lacking the power of locomotion, ex. grass and crops such as wheat, beans, fruit, etc."
+    },
+    "16":{
+      "Type":"PTH",
+      "Output Value for Type":"pth",
+      "Definition":"An infectious microorganism or agent, such as a virus, bacterium, protozoan, prion, viroid, or fungus"
+    },
+    "17":{
+      "Type":"RES",
+      "Output Value for Type":"res",
+      "Definition":"The results of a voting event.  This will cover general results as well as counted results."
+    },
+    "18":{
+      "Type":"SEN",
+      "Output Value for Type":"sen",
+      "Definition":"The judicial or court sentence in a Justice event, the punishment a judge gives to a defendant found guilty of a crime"
+    },
+    "19":{
+      "Type":"SID",
+      "Output Value for Type":"sid",
+      "Definition":"The different sides of a conflict, such as  philosophical, cultural, ideological, religious, political, guiding philosophical movement or group orientation.  This will encompass sides of the battle\/conflict, sports fans when salient, and other such affiliations, in addition to religions, political parties, and other philosophies."
+    },
+    "20":{
+      "Type":"TTL",
+      "Output Value for Type":"ttl",
+      "Definition":"A person\u2019s title or job role"
+    },
+    "21":{
+      "Type":"VAL",
+      "Output Value for Type":"val",
+      "Definition":"A numerical value or non-numerical value such as an informational property such as color or make or URL"
+    },
+    "22":{
+      "Type":"VEH",
+      "Output Value for Type":"veh",
+      "Definition":"A physical device primarily designed to move an object from one location to another, by (for example) carrying, flying, pulling, or pushing the transported object. Vehicle entities may or may not have their own power source."
+    },
+    "23":{
+      "Type":"WEA",
+      "Output Value for Type":"wea",
+      "Definition":"A physical device that is primarily used as an instrument for physically harming or destroying entities"
+    }
+  }
