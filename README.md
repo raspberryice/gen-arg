@@ -7,16 +7,16 @@ Code for paper "Document-Level Argument Extraction by Conditional Generation". N
 - pytorch=1.6 
 - transformers=3.1.0
 - pytorch-lightning=1.0.6
-- spacy=3.0 # conflicts with transformers
-- pytorch-struct=0.4 
-
+- spacy=2.3.2
 
 ## Model Checkpoints 
 Checkpoints trained from this repo are shared for the WikiEvents dataset and the ACE dataset are available at: [s3://gen-arg-data/checkpoints/].
 
 You can download all the contents from the S3 bucket using AWS cli: `aws s3 cp s3://gen-arg-data/checkpoints/ ./ --recursive` 
 
-
+### Model Predictions 
+The model predictions on WikiEvents is provided in `outputs/wikievents-pointer-pred`. 
+Running this file through the `scorer.py` function should give you the exact same numbers as Table 5. 
 
 ## Datasets
 - RAMS (Download at [https://nlp.jhu.edu/rams/])
